@@ -205,6 +205,7 @@ document.getElementById("main").style.marginLeft = "0%";
 searchForm.addEventListener('submit',async (e)=>{
   
   e.preventDefault();
+  suggestionBox.innerHTML="";
   let searchQuery=e.target.querySelector('input').value;
   const url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchQuery}`;
   const response=await fetch(url);
