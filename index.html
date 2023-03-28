@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> The Meal app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav ">
+            <div class="fav-container">
+
+                <a href="javascript:void(0)" class="closebtn" id="closeFav">&times;</a>
+                <h1 id="favTitle">&#9829;Favourites</h1>
+                <ul class="fav-meals" id="fav-meals"></ul>
+            </div>
+            <div class="meals" id="meals"></div>
+        </div>
+
+        <section id="main">
+            <div style="margin:10px;">
+                <span id="favIcon"><i id="favIcon" class='fas fa-star'></i></span>
+            </div>
+            <div class="container">
+                <h1 class="brand">The Meal App</h1>
+
+                <form class="wrapper">
+
+                    <div class="search-input">
+                        <input type="text" placeholder="Search your recipe">
+                        <div class="autocom-box">
+                            <!-- here list are inserted from js -->
+                        </div>
+                        <div class="icon"><i id='searchi'class="fas
+                                fa-search"></i></div>
+                    </div>
+                </form>
+
+                <div class="search-result">
+                    <!-- hear the items are inserted from js  -->
+                </div>
+
+                <div id="result"></div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
