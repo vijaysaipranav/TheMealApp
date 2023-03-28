@@ -203,9 +203,9 @@ document.getElementById("main").style.marginLeft = "0%";
 
 // this event listener will take in the input from the user and will fetch the meal info from the API and show the meal items /card on the browser
 searchForm.addEventListener('submit',async (e)=>{
-  
-  e.preventDefault();
   suggestionBox.innerHTML="";
+  e.preventDefault();
+  
   let searchQuery=e.target.querySelector('input').value;
   const url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchQuery}`;
   const response=await fetch(url);
